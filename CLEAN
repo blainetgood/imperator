@@ -1,0 +1,7 @@
+mkdir imperator-codex-clean
+cd imperator-codex-clean
+git init
+mkdir contracts test metadata
+mv /workspace/imperator/'📜 2. Smart Contract: contracts/CreativeAgreementRegistry.sol solidity Copy Edit' contracts/CreativeAgreementRegistry.sol
+mv /workspace/imperator/test/CreativeAgreement.test.js test/
+mv /workspace/imperator/'📄 3. Metadata Schema: metadata/agreement-schema.json json Copy Edit' metadata/agreement-schema.json
