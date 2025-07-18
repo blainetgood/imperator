@@ -1,0 +1,14 @@
+## 💰 Royalty Mechanism
+
+All Imperatani minted from creative agreements include a **5% royalty** sent directly to the **Creator of Imperator** (the protocol originator).
+
+This ensures the mythic founder is honored perpetually in all creative flows.
+
+### 🔐 How It Works (Smart Contract Logic)
+
+```solidity
+function mint(address to, uint256 amount) public onlyOwner {
+    uint256 royalty = (amount * 500) / 10000;
+    _mint(royaltyRecipient, royalty);
+    _mint(to, amount - royalty);
+}
