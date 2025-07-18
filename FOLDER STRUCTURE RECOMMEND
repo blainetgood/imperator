@@ -1,0 +1,24 @@
+imperator-codex/
+├── contracts/               # Solidity smart contracts (Agreement, Ledger, Token, Treasury)
+│   ├── ImperataniToken.sol
+│   ├── CreativeAgreement.sol
+│   ├── Ledger.sol
+│   ├── Distribution.sol
+├── agents/                  # AI or Python-based automation agents
+│   ├── detector.py
+│   ├── recommender.py
+│   └── monetizer.py
+├── frontend/                # Optional: React frontend for interacting with Imperator
+│   └── (components, pages, web3 integration)
+├── scripts/                 # Deployment / testing scripts
+│   ├── deploy.js
+│   └── testAgreement.js
+├── metadata/                # JSON metadata schemas for content & agreements
+│   └── sample_agreement.json
+├── test/                    # Smart contract tests (e.g., Hardhat or Foundry)
+│   └── CreativeAgreement.test.js
+├── .gitignore
+├── README.md
+├── LICENSE
+├── package.json             # If using Node.js for tooling
+└── hardhat.config.js        # Or truffle-config.js
