@@ -1,0 +1,18 @@
+
+---
+
+## 📝 Sample `sample_agreement.json`
+
+```json
+{
+  "creator": "Echo",
+  "project": "The Song of Flame 27: Auravesth Lyra’kai",
+  "outputScope": "3-track song cycle",
+  "keywords": ["ritual", "clarity", "summer"],
+  "timeline": "2025-08-01 to 2025-09-01",
+  "metadata": {
+    "type": "audio",
+    "format": "mp3",
+    "description": "A ritual for late summer clarity"
+  }
+}
