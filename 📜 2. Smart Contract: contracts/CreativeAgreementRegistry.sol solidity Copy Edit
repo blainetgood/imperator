@@ -1,0 +1,41 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.19;
+
+contract CreativeAgreementRegistry {
+    struct CreativeAgreement {
+        address creator;
+        string projectTitle;
+        string outputScope;
+        string timeline;
+        string[] keywords;
+        string[] categories;
+        string status; // "initiated", "completed", "verified"
+        uint256 timestamp;
+    }
+
+    mapping(uint256 => CreativeAgreement) public agreements;
+    uint256 public nextAgreementId;
+
+    event AgreementCreated(uint256 indexed agreementId, address indexed creator);
+
+    function createAgreement(
+        string memory title,
+        string memory scope,
+        string memory timeline,
+        string[] memory keywords,
+        string[] memory categories
+    ) public {
+        agreements[nextAgreementId] = CreativeAgreement(
+            msg.sender,
+            title,
+            scope,
+            timeline,
+            keywords,
+            categories,
+            "initiated",
+            block.timestamp
+        );
+        emit AgreementCreated(nextAgreementId, msg.sender);
+        nextAgreementId++;
+    }
+}
