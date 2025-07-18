@@ -1,0 +1,16 @@
+imperator-codex/
+├── contracts/
+│   └── CreativeAgreementRegistry.sol
+├── metadata/
+│   └── agreement-schema.json
+├── scripts/
+│   └── deploy_agreement_contract.js
+├── test/
+│   └── CreativeAgreement.test.js
+├── frontend/
+│   └── (optional React app for creator interaction)
+├── hardhat.config.js
+├── package.json
+├── .gitignore
+├── README.md
+└── LICENSE
