@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "creator": { "type": "string" },
+    "project": { "type": "string" },
+    "outputScope": { "type": "string" },
+    "timeline": { "type": "string" },
+    "keywords": { "type": "array", "items": { "type": "string" } },
+    "categories": { "type": "array", "items": { "type": "string" } },
+    "status": { "type": "string", "enum": ["initiated", "completed", "verified"] }
+  },
+  "required": ["creator", "project", "outputScope", "timeline"]
+}
